@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:gravity="center_vertical"  >
+
+    <Button
+        android:id="@+id/coursedetail"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_coursename"
+        android:text="进入课程"
+        android:textSize="9dp"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        android:background="@drawable/button_selector" />
+
+    <TextView
+        android:id="@+id/tv_coursename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="课程名"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_courseid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="课程号"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+</RelativeLayout>
+   
+	
+</LinearLayout>

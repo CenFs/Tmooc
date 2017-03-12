@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:background="#eee"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_horizontal|center_vertical"  >  
+      		<RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >
+  			<Button
+            	android:id="@+id/login_reback_btn"
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="btn_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="性别设置"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />      
+		</RelativeLayout>       
+			</LinearLayout>
+		<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 >
+
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="354dp"
+        	    android:orientation="vertical" >
+
+        		<RelativeLayout
+        		    android:layout_width="match_parent"
+        		    android:layout_height="300dp"
+        		    android:orientation="vertical" >
+<RadioGroup
+
+        android:id="@+id/gendergroup"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical" >
+
+        		    <RadioButton
+        		        android:id="@+id/radiobutton3"
+        		        android:layout_width="wrap_content"
+        		        android:layout_height="wrap_content"
+        		        android:layout_above="@+id/button1"
+        		        android:layout_alignParentRight="true"
+        		        android:layout_marginBottom="33dp"
+        		        android:layout_marginRight="72dp"
+        		        android:text="女"
+        		        android:textStyle="bold" />
+
+        		    <RadioButton
+        		        android:id="@+id/radiobutton2"
+        		        android:layout_width="wrap_content"
+        		        android:layout_height="wrap_content"
+        		        android:layout_alignBaseline="@+id/radiobutton3"
+        		        android:layout_alignBottom="@+id/radiobutton3"
+        		        android:layout_alignParentLeft="true"
+        		        android:text="男"
+        		        android:textStyle="bold" />
+ </RadioGroup>
+        		    
+        		</RelativeLayout>
+
+        	</LinearLayout>
+    </ScrollView>
+
+    
+   
+</LinearLayout>

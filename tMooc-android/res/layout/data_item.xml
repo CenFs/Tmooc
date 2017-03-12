@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal" >
+
+     <LinearLayout
+         android:layout_width="246dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1.13"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/tv_courseid"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="tv_courseid"
+            android:textColor="#000000"
+             android:textSize="12dp" />
+
+        
+
+         <TextView
+             android:id="@+id/tv_dataname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="tv_dataname"
+             android:textColor="#000000"
+             android:textSize="15dp" />
+         <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="20dp"
+	    android:gravity="center_vertical" >
+          <TextView
+             android:id="@+id/tv_datapath"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="tv_datapath"
+            android:textColor="#000000"
+             android:textSize="10dp"
+             android:layout_alignParentRight="true" />
+          </RelativeLayout>
+     </LinearLayout>
+
+
+     <Button
+         android:id="@+id/btn_downloaddata"
+       android:layout_width="90dp"
+    android:layout_height="45dp"
+         android:onClick="downloaddata"
+         android:text="下载"
+          android:textSize="10dp"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        android:background="@drawable/button_selector"
+         />
+ </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+ 
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >
+  			<Button
+            	android:id="@+id/reback"
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="btn_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="新用户注册"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />      
+		</RelativeLayout>
+
+        </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_1"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+       
+ >
+
+
+</RelativeLayout>
+             <!-- android:hint="@string/number" --> 
+<RadioGroup
+   android:orientation="vertical"
+    android:id="@+id/radioGroup"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+    >
+         </RadioGroup>
+
+         <EditText
+             android:id="@+id/numberet1"
+             android:layout_width="fill_parent"
+             android:layout_height="50dip"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/layout_2"
+             android:ems="10"
+             android:hint="姓名" />
+
+         <EditText
+             android:id="@+id/numberet2"
+             android:layout_width="fill_parent"
+             android:layout_height="50dip"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/numberet1"
+             android:ems="10"
+             android:hint="学号" />
+
+         <EditText
+             android:id="@+id/once_more_passwordet1"
+             android:layout_width="322dp"
+             android:layout_height="50dip"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/passwordet1"
+             android:digits="1234567890zxcvbnmasdfghjklqwertyuiopQWERTYUIOPASDFGHJKLZXCVBNM"
+             android:ems="10"
+             android:hint="确认密码：请再输一次密码"
+             android:inputType="textPassword" >
+
+             <requestFocus />
+         </EditText>
+
+         <EditText
+             android:id="@+id/passwordet1"
+             android:layout_width="fill_parent"
+             android:layout_height="50dip"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/numberet2"
+             android:digits="1234567890zxcvbnmasdfghjklqwertyuiopQWERTYUIOPASDFGHJKLZXCVBNM"
+             android:ems="10"
+             android:hint="密码：只能输入数字或字母"
+             android:inputType="textPassword" />
+
+         <Button
+             android:id="@+id/register"
+             android:layout_width="325dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/once_more_passwordet1"
+             android:layout_marginTop="40dp"
+             android:text="确定注册" />
+
+</RelativeLayout>

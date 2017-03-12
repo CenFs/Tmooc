@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="衬衫的价格是？"
+        android:textColor="#000000"
+       />
+    <TextView
+        android:id="@+id/tv_option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A、100美元"
+        android:textColor="#000000"
+       />
+    <TextView
+        android:id="@+id/tv_option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B、九磅十五便士"
+        android:textColor="#000000"
+     />
+    <TextView
+        android:id="@+id/tv_option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C、10美元"
+        android:textColor="#000000"
+     />
+    <TextView
+        android:id="@+id/tv_option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D、100万人民币"
+        android:textColor="#000000"
+      />
+
+    
+</LinearLayout>

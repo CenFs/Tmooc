@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+ 
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >
+  			<Button
+            	android:id="@+id/reback"
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="btn_back"
+           		android:background="@drawable/title_btn_back"/>  
+
+      		<TextView
+      		    android:layout_width="wrap_content"
+      		    android:layout_height="wrap_content"
+      		    android:layout_centerInParent="true"
+      		    android:text="功能介绍"
+      		    android:textColor="#ffffff"
+      		    android:textSize="20sp" />
+      
+		</RelativeLayout>
+
+        </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_1"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+       
+ >
+
+
+</RelativeLayout>
+             <!-- android:hint="@string/number" --> 
+<RadioGroup
+   android:orientation="vertical"
+    android:id="@+id/radioGroup"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+    >
+         </RadioGroup>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/layout_2"
+    android:text="此软件tMooc学习系统旨在帮助广大同学实现网上的自主学习，包括在线学习在线测试等。同时也可以将自己所遇到的问题适时地发布在论坛上，以及记录在自己的个人笔记里。最后就是后台管理员及时的发布通知公告，提醒用户一些学习乃至生活中的诸多问题。"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+login/register OK
+board OK
+note OK
+forum OK
+
+test HALF
+course HALF
+setting NO
+
+
+then we need to do:
+
+test/mycourse + userID ¡ú ÕÅÓê
+course downloaddata ¡ú °×
+test Ìá½»¿¼¾í insert
+
+back
+setting!!!
+
+UI
+
+documents

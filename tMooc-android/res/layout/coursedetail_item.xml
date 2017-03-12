@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_courseid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"
+            android:text="课程号"
+            android:textColor="#000000" />
+
+        <TextView
+           android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="课程信息："
+             android:textSize="15dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="课程名"
+             android:textSize="15dp"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical" >
+ <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="授课教师："
+            android:textSize="18dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/tv_teachername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="教师名"
+            android:textSize="18dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_teacherid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="教师号"
+            android:textSize="18dp"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+ <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="30dp"
+     android:gravity="center_vertical" >
+
+     <TextView
+         android:id="@+id/tv_coursetype"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@+id/textView1"
+         android:text="课程类型"
+         android:textSize="10dp"
+         android:textColor="#000000" />
+
+     <TextView
+         android:id="@+id/tv_studentnum"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:text="学生总数"
+         android:textSize="10dp"
+         android:textColor="#000000" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_toLeftOf="@+id/tv_studentnum"
+         android:text="学生总数："
+         android:textSize="10dp"
+         android:textColor="#000000" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:text="课程类型："
+         android:textColor="#000000"
+         android:textSize="10dp" />
+
+ </RelativeLayout>
+
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical" >
+
+	<Button
+	    android:id="@+id/btn_datalist"
+	    android:layout_width="100dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/button_selector"
+	    android:text="资料下载"
+	    android:textColor="#666666"
+	    android:textSize="9dp"
+	    android:textStyle="bold" />
+
+	</RelativeLayout>
+</LinearLayout>

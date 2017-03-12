@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:background="#eee"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_horizontal|center_vertical"  >  
+      		<RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >
+  			<Button
+            	android:id="@+id/reback"
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="btn_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="手机号码"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />      
+		</RelativeLayout>       
+			</LinearLayout>
+		<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 >
+
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="354dp"
+        	    android:orientation="vertical" >
+      				
+      				<RelativeLayout
+      				    android:layout_width="match_parent"
+      				    android:layout_height="391dp"
+      				    android:orientation="vertical" >    
+   <EditText
+       android:id="@+id/numberet"
+       android:layout_width="300dip"
+       android:layout_height="50dip"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="44dp"
+       android:ems="10"
+       android:numeric="integer"
+       android:lines="1"
+        android:maxLength="13"
+       android:textColor="#ff000000"
+       android:hint="输入手机号码哦" >
+
+       
+       
+       <requestFocus />
+   </EditText>
+
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="100dip"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/numberet"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="46dp"
+       android:text="完成" />
+
+   <TextView
+       android:id="@+id/textview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       
+       android:textColor="#3333CC"
+       android:textSize="20sp" />
+
+</RelativeLayout >
+        	
+
+        	</LinearLayout>
+    </ScrollView>
+
+    
+   
+</LinearLayout>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >
+  			<Button
+            	android:id="@+id/reback"
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="返回"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="btn_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="我的帖子"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />
+				     
+		</RelativeLayout>
+
+     <EditText
+         android:id="@+id/et_forumdetail"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/btn_sendthisforum"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/et_forumtitle"
+         android:ems="10"
+         android:hint="输入帖子内容："
+         android:maxLines="13"
+         android:minLines="17" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/btn_sendthisforum"
+        android:layout_width="100dp"
+         android:layout_height="40dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/button_selector"
+         android:text="发送" 
+         android:textColor="#666666"
+         android:textSize="12dp"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/et_forumtitle"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/title"
+         android:ems="10"
+         android:hint="输入帖子标题："
+         android:onClick="onClick" />
+    
+</RelativeLayout>    

@@ -1,0 +1,1 @@
+07-11 10:12:34.461: E/AndroidRuntime(1130): android.util.AndroidRuntimeException: Calling startActivity() from outside of an Activity  context requires the FLAG_ACTIVITY_NEW_TASK flag. Is this really what you want?

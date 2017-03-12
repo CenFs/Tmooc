@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="tMooc"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />  
+				<Button
+				    android:id="@+id/set"
+				    android:layout_width="70dp"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignParentTop="true"
+				    android:text="设置"
+				    
+				    android:textColor="#fff"
+				    android:textSize="14sp"
+				    android:onClick="btn_set"
+				    android:background="@drawable/title_btn_right" />    
+		</RelativeLayout>
+
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="4dp"
+	    android:text="通知公告"
+	    android:textColor="#fffafa" />
+
+    <Button
+        android:id="@+id/btn_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通知公告"
+        android:textColor="#fffafa"
+        android:textStyle="bold"
+        android:onClick="board"
+        android:textSize="24dp"
+        android:background="@drawable/button_selector1" />
+     <Button
+        android:id="@+id/btn_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fffafa"
+        android:textStyle="bold"
+         android:textSize="24dp"
+        android:text="在线学习"
+        android:onClick="course"
+         android:background="@drawable/button_selector2" />
+      <Button
+         android:id="@+id/btn_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程论坛"
+        android:textColor="#fffafa"
+        android:textStyle="bold"
+         android:textSize="24dp"
+        android:onClick="forum"
+        android:background="@drawable/button_selector4" 
+     />
+      <Button
+         android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在线测试"
+         android:textColor="#fffafa"
+        android:textStyle="bold"
+         android:textSize="24dp"
+        android:onClick="test"
+         android:background="@drawable/button_selector3" 
+     />
+
+      <Button
+          android:id="@+id/btn_note"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/button_selector5"
+          android:onClick="note"
+          android:text="学习日记"
+           android:textColor="#fffafa"
+        android:textStyle="bold"
+         android:textSize="24dp" />
+      
+</LinearLayout>
